@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Keyboard</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body class="app">
+  <textarea class="output">Hello world!</textarea>
+  <div class="input">
+    <div class="input-top">
+      <button
+        class="key lang-key span-3"
+        data-action="lang">en</button>
+      <button
+        class="key only-bg speech span-3"
+        data-action="speech">Speech</button>
+      <button
+        class="key only-bg sound span-3"
+        data-action="sound">Sound</button>
+      <button
+        class="key only-bg hide last"
+        data-action="hide">Hide</button>
+    </div>
+    <!-- 1 -->
+    <button
+      class="key span-2"
+      data-code="Backquote">`</button>
+    <button
+      class="key span-2"
+      data-code="Digit1">1</button>
+    <button
+      class="key span-2"
+      data-code="Digit2">2</button>
+    <button
+      class="key span-2"
+      data-code="Digit3">3</button>
+    <button
+      class="key span-2"
+      data-code="Digit4">4</button>
+    <button
+      class="key span-2"
+      data-code="Digit5">5</button>
+    <button
+      class="key span-2"
+      data-code="Digit6">6</button>
+    <button
+      class="key span-2"
+      data-code="Digit7">7</button>
+    <button
+      class="key span-2"
+      data-code="Digit8">8</button>
+    <button
+      class="key span-2"
+      data-code="Digit9">9</button>
+    <button
+      class="key span-2"
+      data-code="Digit0">0</button>
+    <button
+      class="key span-2"
+      data-code="Minus">-</button>
+    <button
+      class="key span-2"
+      data-code="Equal">=</button>
+    <button
+      class="key only-bg delete span-3"
+      data-code="Backspace">delete</button>
+    <!-- 2 -->
+    <button
+      class="key only-bg tab span-3"
+      data-code="Tab">tab</button>
+    <button
+      class="key span-2"
+      data-code="KeyQ">q</button>
+    <button
+      class="key span-2"
+      data-code="KeyW">w</button>
+    <button
+      class="key span-2"
+      data-code="KeyE">e</button>
+    <button
+      class="key span-2"
+      data-code="KeyR">r</button>
+    <button
+      class="key span-2"
+      data-code="KeyT">t</button>
+    <button
+      class="key span-2"
+      data-code="KeyY">y</button>
+    <button
+      class="key span-2"
+      data-code="KeyU">u</button>
+    <button
+      class="key span-2"
+      data-code="KeyI">i</button>
+    <button
+      class="key span-2"
+      data-code="KeyO">o</button>
+    <button
+      class="key span-2"
+      data-code="KeyP">p</button>
+    <button
+      class="key span-2"
+      data-code="BracketLeft">[</button>
+    <button
+      class="key span-2"
+      data-code="BracketRight">]</button>
+    <button
+      class="key span-2"
+      data-code="Backslash">\</button>
+    <!-- 3 -->
+    <button
+      class="key only-bg caps-lock span-4"
+      data-code="CapsLock">caps lock</button>
+    <button
+      class="key span-2"
+      data-code="KeyA">a</button>
+    <button
+      class="key span-2"
+      data-code="KeyS">s</button>
+    <button
+      class="key span-2"
+      data-code="KeyD">d</button>
+    <button
+      class="key span-2"
+      data-code="KeyF">f</button>
+    <button
+      class="key span-2"
+      data-code="KeyG">g</button>
+    <button
+      class="key span-2"
+      data-code="KeyH">h</button>
+    <button
+      class="key span-2"
+      data-code="KeyJ">j</button>
+    <button
+      class="key span-2"
+      data-code="KeyK">k</button>
+    <button
+      class="key span-2"
+      data-code="KeyL">l</button>
+    <button
+      class="key span-2"
+      data-code="Semicolon">;</button>
+    <button
+      class="key span-2"
+      data-code="Quote">'</button>
+    <button
+      class="key only-bg enter span-3"
+      data-code="Enter">enter</button>
+    <!-- 4 -->
+    <button
+      class="key only-bg shift span-5"
+      data-code="ShiftLeft"></button>
+    <button
+      class="key span-2"
+      data-code="KeyZ">z</button>
+    <button
+      class="key span-2"
+      data-code="KeyX">x</button>
+    <button
+      class="key span-2"
+      data-code="KeyC">c</button>
+    <button
+      class="key span-2"
+      data-code="KeyV">v</button>
+    <button
+      class="key span-2"
+      data-code="KeyB">b</button>
+    <button
+      class="key span-2"
+      data-code="KeyN">n</button>
+    <button
+      class="key span-2"
+      data-code="KeyM">m</button>
+    <button
+      class="key span-2"
+      data-code="Comma">,</button>
+    <button
+      class="key span-2"
+      data-code="Period">.</button>
+    <button
+      class="key span-2"
+      data-code="Slash">/</button>
+    <button
+      class="key only-bg shift span-4"
+      data-code="ShiftRight"></button>
+    <!-- 5 -->
+    <div class="span-2">fn</div>
+    <button
+      class="key only-bg control span-2"
+      data-code="ControlLeft"
+      disabled>control</button>
+    <button
+      class="key only-bg option span-2"
+      data-code="AltLeft"
+      disabled>option</button>
+    <button
+      class="key only-bg meta span-2"
+      data-code="MetaLeft"
+      disabled>command</button>
+    <button
+      class="key span-10"
+      data-code="Space"></button>
+    <button
+      class="key only-bg meta span-2"
+      data-code="MetaRight"
+      disabled>command</button>
+    <button
+      class="key only-bg option span-2"
+      data-code="AltRight"
+      disabled>option</button>
+    <!-- Arrows -->
+    <div class="arrows span-7">
+      <div class="empty span-1"></div>
+      <button
+        class="key only-bg up span-1"
+        data-code="ArrowUp"
+        disabled>up</button>
+      <div class="empty span-1"></div>
+      <button
+        class="key only-bg left span-1"
+        data-code="ArrowLeft">left</button>
+      <button
+        class="key only-bg down span-1"
+        data-code="ArrowDown"
+        disabled>bottom</button>
+      <button
+        class="key only-bg right span-1"
+        data-code="ArrowRight">right</button>
+    </div>
+    <div class="audio" hidden>
+      <audio data-audio="backspace" src="assets/sounds/backspace.wav" type="audio/wav"></audio>
+      <audio data-audio="capslock" src="assets/sounds/capslock.wav" type="audio/wav"></audio>
+      <audio data-audio="en" src="assets/sounds/en.wav" type="audio/wav"></audio>
+      <audio data-audio="enter" src="assets/sounds/enter.wav" type="audio/wav"></audio>
+      <audio data-audio="ru" src="assets/sounds/ru.wav" type="audio/wav"></audio>
+      <audio data-audio="shift" src="assets/sounds/shift.wav" type="audio/wav"></audio>
+    </div>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
